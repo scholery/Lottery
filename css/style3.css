@@ -1,0 +1,6 @@
+a,div.menu,div.items,div.ss{color:#fff;}
+div.top{color:#fff;}
+div.item{background:#fff;Opacity:0.5;Filter:alpha(opacity=50);color:#000;font-weight:bold;}
+div.active{background: rgb(135,255,126);Opacity:1;Filter:alpha(opacity=100);color:#000;}
+div.ignore{background: #80ffff;Opacity:0.8;Filter:alpha(opacity=80);border:1px solid #98b850;color:#444;}
+div.active.ignore{border:1px solid #fff;background: rgb(135,255,126);Opacity:1;Filter:alpha(opacity=100);color:#000;}

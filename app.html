@@ -1,0 +1,83 @@
+<html>
+<head>
+	<title>抽奖</title>
+	<link href="./css/style.css" type="text/css" rel="stylesheet" media="screen, projection">
+	<link href="./css/style1.css" type="text/css" rel="stylesheet" media="screen, projection">
+	<link href="./css/ui-dialog.css" type="text/css" rel="stylesheet" media="screen, projection">
+</head>
+
+<body scroll="no">
+<div class="readme hide">
+按键盘空格键或者字母A可进行抽取,隐藏菜单请按ESC。<br>
+建议每组选出10个以内的中奖号码。<br>
+方向键左“←”可以返回上一轮抽奖。<br>
+方向键右“→”可以进行下一轮抽奖。<br>
+ESC菜单中高级设置可以设置参与人数，格子大小，重置抽奖数据等信息。<br>
+点击已经中奖格子并输入点击的格子编号可取消该格子中奖状态，并清除中奖信息。<br>
+中奖信息保存在本机上，如清理缓存活更换机器则记录将消失。
+</div>
+<div id="bodybg">
+<img src="./images/bodybg1.jpg" class="stretch"/>
+</div>
+<div class="model hide" style="width:300px;height:350px;">
+	<a href="http://www.hrblive.com" target="_blank">年会抽奖</a>
+	<input type="text" id="title" class="ui-dialog-autofocus" value="" placeholder="输入标题，可以为空。"/>
+	<!--<input type="text" id="personCount" class="ui-dialog-autofocus" value="" placeholder="输入人数，请输入数字。"/>-->
+	方格宽：<input type="text" id="itemk">方格高：<input type="text" id="itemg">
+	眼花缭乱模式:<input type="radio" name="ms" style="width:15px;" checked value="50">惊心动魄模式:<input type="radio" name="ms" style="width:15px;" value="300"><br>
+	皮肤1:<input type="radio" name="pf" style="width:15px;" checked value="1">皮肤2:<input type="radio" name="pf" style="width:15px;" value="2">皮肤3:<input type="radio" name="pf" style="width:15px;" value="3"><br>
+	重置已产生的抽奖数据<input type="checkbox" id="reset" value="1"/><br>
+	<button class="cjms">超级模式</button>
+</div>
+<div class="top"><a href="http://www.zxrail.com.cn" target="_blank">中兴（温州）轨道通讯技术有限公司</a></div>
+<div class="items"></div>
+<div class="menu">
+	<div class="help">
+		<b>按键盘空格键或者字母A可进行抽取,查看帮助请按F1,隐藏请按ESC。<br><a href="javascript:;" class="config">高级设定</a>|<a href="javascript:;" class="showjg">查看结果</a>|<a href="javascript:;" class="jj">加奖</a>|<a href="javascript:;" class="prev">上一轮</a>|<a href="javascript:;" class="next">下一轮</a></b>
+	</div>
+	<div class="ss">
+		<ol class="sequence" start="1"><span class="olTitle">三等奖</span></ol>
+		<ol class="sequence hide" start="1"><span class="olTitle">二等奖</span></ol>
+		<ol class="sequence hide" start="1"><span class="olTitle">一等奖</span></ol>
+		<ol class="sequence hide" start="1"><span class="olTitle">第四轮</span></ol>
+		<ol class="sequence hide" start="1"><span class="olTitle">第五轮</span></ol>
+		<ol class="sequence hide" start="1"><span class="olTitle">第六轮</span></ol>
+		<ol class="sequence hide" start="1"><span class="olTitle">第七轮</span></ol>
+		<ol class="sequence hide" start="1"><span class="olTitle">第八轮</span></ol>
+		<ol class="sequence hide" start="1"><span class="olTitle">第九轮</span></ol>
+		<ol class="sequence hide" start="1"><span class="olTitle">第十轮</span></ol>
+	<div>
+</div>
+<div class="hm hide">
+	<div>
+		<span>Q：</span><input type="text" id="q" value="">
+		<span>W：</span><input type="text" id="w" value="">
+	</div>
+	<div>
+		<span>E：</span><input type="text" id="e" value="">
+		<span>R：</span><input type="text" id="r" value="">
+	</div>
+	<div>
+		<span>T：</span><input type="text" id="t" value="">
+		<span>Y：</span><input type="text" id="y" value="">
+	</div>
+	<div>
+		<span>U：</span><input type="text" id="u" value="">
+		<span>I：</span><input type="text" id="i" value="">
+	</div>
+	<div>
+		<span>O：</span><input type="text" id="o" value="">
+		<span>P：</span><input type="text" id="p" value="">
+	</div>
+	<div><span>排除(输入编号，多个编号用空格隔开)：</span><textarea id="pchm" cols="45" rows="4"></textarea></div>
+<div>	
+<audio id="runingmic" class="hide" loop><source src=".\music\runing.wav"></audio>
+<audio id="pausemic" class="hide"><source src=".\music\stop.mp3"></audio>
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/jquery.pulsate.min.js"></script>
+<script type="text/javascript" src="./js/dialog-plus-min.js"></script>
+<script type="text/javascript" src="./js/users.js"></script>
+<script type="text/javascript" src="./js/app.js"></script>
+
+</body>
+</html>

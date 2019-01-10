@@ -1,0 +1,5 @@
+a,div.menu,div.items,div.ss{color:#fff;}
+div.item{background:#000;Opacity:0.2;Filter:alpha(opacity=20);}
+div.active{background: rgb(135,255,126);Opacity:1;Filter:alpha(opacity=100);color:#000;}
+div.ignore{background: none;border:1px solid #98b850;}
+div.active.ignore{border:1px solid #fff;background: rgb(135,255,126);Opacity:1;Filter:alpha(opacity=100);color:#000;}
